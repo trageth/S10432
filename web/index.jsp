@@ -14,6 +14,11 @@ Hello World!<br/>
 
   out.println("Your IP address is " + request.getRemoteAddr());
 %>
+<FORM METHOD=POST ACTION="SaveName.jsp">
+    What's your name? <INPUT TYPE=TEXT NAME=username SIZE=20>
+    How old are you? <INPUT TYPE=NUMBER NAME=age SIZE=20>
+    <P><INPUT TYPE=SUBMIT>
+</FORM>
 <br>
 test test test
 </body>
