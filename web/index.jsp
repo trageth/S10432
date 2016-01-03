@@ -10,17 +10,11 @@
 <head><title>Hello World</title></head>
 <body>
 Hello World!<br/>
-<% System.out.println("Scriptlet to get the date");
+<% out.println("Scriptlet to get the date");
     java.util.Date date= new java.util.Date();
+    out.println("<BR>Hello!  The time is now "+ date);
+    out.println("Java version is"+  System.getProperty("java.version") +"\n" );
 
-
-
-        %>
-Hello!  The time is now <%= date %><br/>
-Java version is <%= System.getProperty("java.version") %><br/>
-OS name is <%= System.getProperty("os.name") %><br/>
-User name is <%= System.getProperty("user.name") %> </br/>
-<%
   out.println("Your IP address is " + request.getRemoteAddr());
 %>
 <br>
